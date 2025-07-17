@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# A Bash script that displays all running processes in a user-oriented and hierarchical format
-
-ps -ejH
+# A Bash script that displays a list of all running process IDs (PIDs), one per line
+ps -eo pid
