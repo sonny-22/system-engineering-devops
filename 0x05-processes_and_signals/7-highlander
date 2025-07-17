@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # A Bash script that handles SIGTERM and prints "I am invincible!!!"
 
-trap 'echo "I am invincible!!!" >&2' SIGTERM
+trap 'printf "I am invincible!!!\n"' SIGTERM
 
 while true; do
   echo "To infinity and beyond"
