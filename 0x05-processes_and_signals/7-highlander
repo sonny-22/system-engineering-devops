@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # A Bash script that handles SIGTERM and prints "I am invincible!!!"
 
-trap 'printf "I am invincible!!!\n"' SIGTERM
+trap 'echo "I am invincible!!!"' SIGTERM
 
 while true; do
   echo "To infinity and beyond"
-  sleep 2
+  sleep 2 &
+  wait $!
 done
